@@ -51,6 +51,12 @@ nav li a {
     color: #424242;
 }
 
+/* main styles */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* banner-related styles */
 .banner-content {
     max-width: 800px;
@@ -67,25 +73,61 @@ nav li a {
 .banner-description {
     color: #727272;
 }
+
 .banner img {
     margin-top: 20px;
     width: 100%;
 }
+
 /* Responsive media queries */
 @media screen and (max-width: 576px) {
     header {
         padding: 20px;
     }
+
     nav {
         flex-direction: column;
     }
 }
+
 /* tablet or medium devices */
 @media screen and (min-width:576px) and (max-width:960px) {
     header {
         padding: 50px;
     }
-     nav {
+
+    nav {
         flex-direction: column;
-     }
+    }
+}
+
+/* teams Styles */
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+}
+
+.t-content-title {
+    font-size: 2.8rem;
+}
+
+.t-content-title .quickList {
+    color: #727272;
+    font-weight: 500;
+}
+
+.t-content-title .features {
+    color: #FF900E;
+    font-weight: 700;
 }
